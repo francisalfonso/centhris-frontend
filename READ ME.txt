@@ -1,0 +1,17 @@
+Scenario:
+You are building the Employee List page of CentHRIS.
+You must fetch paginated data from:
+
+GET /api/employees?search=&amp;page=1&amp;per_page=10
+
+Requirements:
+Create a Pinia store called useEmployeeStore.
+
+Implement:
+getEmployees(search, page)
+loading state
+data, pagination, error
+Implement automatic retry when the API fails (max 3 attempts with delay).
+
+Expected Output:
+A working store in TypeScript, clean and readable.
